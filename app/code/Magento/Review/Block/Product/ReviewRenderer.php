@@ -118,7 +118,7 @@ class ReviewRenderer extends \Magento\Framework\View\Element\Template implements
      */
     public function getRatingSummary()
     {
-        return $this->getProduct()->getRatingSummary();
+        return $this->getProduct()->getRatingSummary()->getRatingSummary();
     }
 
     /**
@@ -128,7 +128,7 @@ class ReviewRenderer extends \Magento\Framework\View\Element\Template implements
      */
     public function getReviewsCount()
     {
-        return $this->getProduct()->getReviewsCount();
+        return $this->getProduct()->getRatingSummary()->getReviewsCount();
     }
 
     /**
